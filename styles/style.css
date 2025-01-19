@@ -1,0 +1,323 @@
+/* comment in css is different than in HTML*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    /*
+    width: 1588px;
+    height: 1032px; */
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header-bar {
+    display: flex;
+    height: 120px;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+header {
+    display: flex;
+    height: 120px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    color: #000;
+    text-align: center;
+    font-kerning: none;
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.32px;
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+footer {
+    display: flex;
+    height: 96px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    color: #000;
+    text-align: center;
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Main
+----------------------------------------------------------*/
+
+.row{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 64px;
+    flex: 1 0 0;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.subpage{
+    width: 400px;
+    height: 196px;
+
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 38px 11px 0px rgba(0, 0, 0, 0.00), 0px 24px 10px 0px rgba(0, 0, 0, 0.03), 0px 14px 8px 0px rgba(0, 0, 0, 0.10), 0px 6px 6px 0px rgba(0, 0, 0, 0.17), 0px 2px 3px 0px rgba(0, 0, 0, 0.20);
+    /*  overflow hides content outside of the bounds*/
+    overflow: hidden;
+
+}
+
+.subpage-image{
+    width: 400px;
+    height: 196px;
+    flex-shrink: 0;
+
+    /* image in html
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat; */
+
+}
+
+.label-container{
+    display: flex;
+    width: 400px;
+    height: 120px;
+    padding: 32px;
+    align-items: flex-end;
+    gap: 10px;
+    flex-shrink: 0;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 86.1%);
+    position: relative;
+    bottom: 184px;
+}
+
+
+.subpage-title{
+
+    display: flex;
+    width: 336px;
+    height: 46px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.68px;
+
+    
+}
+
+/* 
+Header bar
+-----------------------------------------------------------*/
+
+.header-bar-row {
+    display: flex;
+    padding: 24px 16px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    flex: 1 0 0;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: flex;
+    padding: 8px 32px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-container {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-title {
+    color: #000;
+    text-align: center;
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+}
+
+
+/* 
+Course log / dev diary
+-----------------------------------------------------------*/
+
+.log-row{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 64px;
+    flex: 1 0 0;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.column-TOC{
+    display: flex;
+    width: 311px;
+    height: 537px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.toc-entry{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    border-radius: 20px;
+    background: #E8E8E8;
+
+}
+
+.toc-container{
+    display: flex;
+    padding: 12px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+
+.toc-date{
+    align-self: stretch;
+
+    color: #000;
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.column-list {
+    display: flex;
+    padding: 0px 10px 10px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.list-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+
+.list-container {
+    display: flex;
+    width: 600px;
+    padding: 12px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.list-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+
+    color: #000;
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.68px;
+}
+
+/* not sure how to add line? svg? to html
+.list-date-line {
+    height: 0px;
+    align-self: stretch;
+
+    stroke-width: 2px;
+    stroke: #FF9696;
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="657" height="2" viewBox="0 0 657 2" fill="none">
+    <path d="M1.5 1H655.5" stroke="#FF9696" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+}
+*/
+
+.list-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+
+    color: #000;
+    font-family: Inter, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
