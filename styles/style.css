@@ -321,3 +321,19 @@ Course log / dev diary
     line-height: normal;
 
 }
+
+
+
+.img-container{
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+    position: relative;
+
+}
