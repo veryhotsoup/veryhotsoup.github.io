@@ -337,3 +337,10 @@ Course log / dev diary
     position: relative;
 
 }
+
+
+#GLB_3Dviewer {
+    width: 100%;
+    max-width: 1280px;
+    height: 700px;
+}
