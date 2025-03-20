@@ -80,6 +80,12 @@
                         <div class="toc-date">Week 06 - 18/03/25</div>
                     </div>
                 </a>
+
+                <a href="#log07" class="toc-entry">
+                    <div class="toc-container">
+                        <div class="toc-date">Week 07 - 25/03/25</div>
+                    </div>
+                </a>
             </div>
 
             <div class="column-list"> 
@@ -177,9 +183,32 @@
                     <div class="list-container">
                         <div class="list-date">Week 06 - 18/03/25</div>
                         <div class="list-date-line"></div>
+
+                        <div class="list-text">I spent a lot of time this week trying to figure out interactions and prototyping on Webflow. The basic interactions were there, but I was trying to get our insets to scroll in with a sticky position on the screen. This was very difficult and I just could not get the alignment right on the insets and the backgrounds - they wouldn’t match up. Having the background and insets match up is essential for our project and the basis of what we designed on (see earlier dev diary entry where I mention the book “Here”). After a lot of troubleshooting I have decided that the insets will not be separate elements in the prototype - they will just be part of the background that changes as you scroll. Only the text will be a separate element on Webflow. See below for a screenshot of the prototype title screen. The text and rough DNA strand are animated.</div>
+
+                        <img src="../images/DDwk06_01.png" class="img-container">
+
+                        <div class="list-text">Below is the section where I was testing out the alignment. The storyboard 2D illustration in the bottom right corner (drawn by Min) was used to test out the sticky position of insets during scroll. It worked fine, but it wouldn’t align perfectly with the background. After another few iterations, I decided to just incorporate the inset with the background as one flat image. The pink coloured box was originally a separate test inset for alignment. I am sacrificing the scrolling & sticky position effect by doing this.</div>
+
+                        <img src="../images/DDwk06_02.png" class="img-container">
+
+                        <div class="list-text">Another note on the alignment: the way I have the current Webflow set up is that all the backgrounds are fading in and out as you scroll (so they are all stacked on top of eachother on the website, just at 0 opacity most of the time). The way they are appearing is keyframed by percentage of the scroll progress through the entire website, so this is going to be relatively tedious.  I might have to plan this all out (percentages and what appears when) externally first, maybe on Figma, before I go straight into dev on Webflow. I have a lot to do… you can see the timeline for the scroll interaction I had for the prototype below. I could not get the alignment to work properly with each of the sections that scrolled by, but maybe I’ll try it once more before fully giving up….</div>
+
+                        <img src="../images/DDwk06_03.png" class="img-container">
+
+                        <div class="list-text">I still have to figure out how to add in the videos on scrub. It seems like Webflow requires custom code in order to scrub videos on scroll. I found a good tutorial on Youtube that also has custom code and relatively detailed instructions. The only thing is that you have to pay to have custom code on Webflow - Molly and Min agreed that it was a good idea to pay so we can at least try it out, even if it doesn’t work. I paid for the monthly plan and we split the cost ($26!!! could be cheaper…). I am in the middle of trying out the code on the video I’ve put in the prototype. I’ve got the video scrolling position lined up nicely, but I’m still figuring out the scrubbing. Hopefully it works, but if it doesn’t I might have to look into alternatives. I have been feeling a bit frustrated with development overall, but I’m sure it will come together in the end, I just have a lot more work lined up for the next week.</div>
+
+                    </div>
+                </div>
+
+                <div class="list-entry" id="log07">
+                    <div class="list-container">
+                        <div class="list-date">Week 07 - 25/03/25</div>
+                        <div class="list-date-line"></div>
                         <div class="list-text"></div>
                     </div>
                 </div>
+
 
             </div>
 
