@@ -205,7 +205,26 @@
                     <div class="list-container">
                         <div class="list-date">Week 07 - 25/03/25</div>
                         <div class="list-date-line"></div>
-                        <div class="list-text"></div>
+                        <div class="list-text">FINAL DEV DIARY! Lots happened between last Tuesday and this Tuesday. Starting chronologically… on Wednesday, I could not get the scroll/scrubbing to work for the video. I asked Michael for help (thank you Michael!!!), and he spent about 3 hours trying to help troubleshoot it, but to no avail. It would be possible to figure out, but not with our timeline, so I had to find alternatives. I ran into numerous issues with Webflow, timing, alignment and otherwise. The scroll interactions I had initially set up stopped working, so I did some troubleshooting again with Alex on Friday. The final method I decided to go with for our prototype is as follows… 1) the scrolling text that showed up were done as sticky blocks in sections, as you can see below in the Navigator panel on the left. 
+                        </div>
+
+                        <img src="../images/DDwk07_01.png" class="img-container">
+
+                        <div class="list-text">2) the imagery & overlays were all flat, static backgrounds that were fixed on the page. As you scroll, you would be changing the opacity of the backgrounds so that the next background would fade into 100% opacity over the previous. This helps “fake” some animation, as we had the sections that were supposed to be video as almost animatic-esque stills. However, this meant that I had to spend a lot more time setting up the timing. The process of doing this is by keyframing the background opacity by percentage of scroll through the website. The website length then influences this timing. I have accidentally changed the website length and messed up the timing of the backgrounds on many many occasions. My initial plan was to put all the backgrounds on and then time the text, but the best way to develop this turned out to be checking the keyframing of the backgrounds with the text timing concurrently, so it was a lot of back and forth and troubleshooting various timing errors. This definitely isn’t the most optimal workflow and that’s why it took so long… I ran into so many issues… My final Webflow crash tally was 52. Near the end of the prototype, Webflow was getting very buggy and not working well - the backgrounds weren’t loading in properly and fade / timed interactions weren’t working. See below for an example.
+                        </div>
+
+                        <img src="../images/DDwk07_02.png" class="img-container">
+
+                        <div class="list-text">It got so bad that Webflow lost its GUI… the publish button section wasn’t working (see below).
+                        </div>
+
+                        <img src="../images/DDwk07_03.mp4" class="img-container">
+
+                        <div class="list-text">
+                        I was making this on PC, but optimized it and recording the scroll on my Macbook (the Macbook has smoother scroll). I tried optimizing the images to see if that would help but the difference it made was miniscule, but at least the Webflow GUI was working normally on PC again. The workaround for this was to record the first parts of the prototype on my Macbook, and for the last part that just wouldn’t run properly on Mac, I would record it on my PC and splice it together in AE. I put together the videos in AE and did some editing, and then passed it off to Molly for final touches before our presentation. I also spent some time wrapping up the preproduction document and cleaning up the slides. All in all, we worked really hard and I think we did a great job! The scrollytelly works (to a certain degree), but is optimized for viewing on my 14” Macbook on Google Chrome at 75% zoom. 
+                        </div>
+
+                        
                     </div>
                 </div>
 
